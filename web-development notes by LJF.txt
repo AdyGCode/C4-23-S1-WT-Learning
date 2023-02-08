@@ -1,0 +1,30 @@
+sessionOne
+
+Talked about the hardware, tcp/ip, application layers
+
+techonlogy for websites
+hypertext markup language html - the content
+casscading style sheets css - styles the content
+javascript - makes the content interactive
+javascript object notation json, extensible markup language xml data transfer protiicals
+proxy - acts as a way to direct traffic and to cache
+
+Tools will use
+browser
+ide wwbstorm
+server
+
+in a new project type html:5 and press tab it will generate boilerplate
+the first line tells what format the page is in (html)
+Is the start html tag with an atrubuite that tells what the language the page is in
+The head of the page contains meta data of the web page
+	charset tells what charactor set it is using
+	the view port with the content atrubes decribes how should be viewed
+	internet explorer compatable
+	title of the page
+	place holder for content delivery network, style sheet, javascript
+Body
+lorem press tab will auto compete lorem ipsum
+the auto compete also works for tags
+
+bash paste shift+insert
