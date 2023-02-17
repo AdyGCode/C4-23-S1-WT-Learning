@@ -108,3 +108,45 @@ main {
     grid-template-columns: repeat(3,1fr);
     gap: 1rem;
 }
+
+article h2, aside h2 {
+    color: #eee;
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-shadow: 2px 2px 2px black;
+}
+
+#article-01 {
+    /* name for sub grid section */
+    grid-area: article1;
+
+    background-color: lightblue;
+    padding: 1em;
+}
+
+#article-02 {
+    /* name for sub grid section */
+    grid-area: article2;
+
+    background-color: lightgreen;
+    padding: 1em;
+}
+
+
+main aside {
+    /* name for sub grid section */
+    grid-area: aside;
+
+    background-color: lightgreen;
+    padding: 1em;
+}
+
+/*-----------footer------------------*/
+
+footer {
+    /* name for primary grid */
+    grid-area: footer;
+    height: 100px;
+}
+
+/* ------------ End ------------- */
