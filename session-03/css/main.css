@@ -1,0 +1,110 @@
+/*********************************************************************
+    Filename:   session-03/css/main.css
+    Author:     Adrian Gould <adrian.gould@nmtafe.wa.edu.au>
+    Version:    1.0
+    Purpose:    Session 03 Main Style Sheet
+                Demonstrates the use of styles and
+                the css grid.
+ *********************************************************************/
+
+/*****************
+ Resets
+ *****************/
+
+/** Target all the elements on the page **/
+* {
+    font-family: "Lucida Sans", Verdana, "sans-serif";
+    font-size: 16px;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+/*****************
+ Basic Page Styles
+ *****************/
+
+body {
+    background-color: #87c7fa;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Bradley Hand ITC", "Times New Roman", serif;
+    color: #222222;
+    color: rgba(134, 134, 134, 0.7);
+}
+
+h1 {
+    font-size: 3rem;
+    color: rgb(255,255,255,0.9);
+    padding: 2rem 0 1rem 0;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+p {
+    padding: 0.5rem 0; /* same as 0.5rem 0 0.5rem 0 */
+}
+/*****************
+ Main Styles
+ *****************/
+
+#wrapper {
+    max-width: 1000px;
+    min-height: 100vh; /* View Height */
+    margin: 0 auto; /* make the left/right margins identical */
+    background-color: #f1f1ff;
+    /* primary grid */
+    display: grid;
+    grid-template-areas: "header" "menu" "content" "footer";
+    grid-template-columns: 1fr; /* 1 fraction ie 100% */
+    grid-template-rows: 100px 50px minmax(650px, auto) 100px;
+}
+
+#wrapper header, #wrapper footer {
+    background-color: #000000;
+}
+
+header {
+    /* attach name to header tag */
+    grid-area: header;
+
+    /* sub grid */
+    display: grid;
+    grid-template-areas: "logo" "company" "company" "company";
+    grid-template-columns: repeat(4, 1fr);
+}
+
+header img {
+    grid-area: logo;
+}
+
+header p {
+    grid-area: company;
+    color: #ffffff;
+    text-align: right;
+    font-size: 2rem;
+    padding: 0 1rem 0 0;
+}
+
+main {
+    background-color: #ffffff;
+    max-width: 100%;
+    min-height: auto;
+    padding: 1rem;
+
+    grid-area: content;
+
+    /* Sub Grid */
+    display: grid;
+    grid-template-areas: "article1 article1 aside"
+                         "article2 article2 aside";
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
