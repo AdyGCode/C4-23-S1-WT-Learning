@@ -1,0 +1,31 @@
+/**
+ * Filename:    css/main.css
+ * Author:      Adrian Gould <...@...>
+ * Version:     1.0
+ */
+
+.container {
+    width:80%;
+    margin: 0 auto;
+}
+
+.recipe {
+    background: #cccccc;
+    padding: 1rem;
+}
+
+.recipe h2 {
+    font-size: 3rem;
+}
+
+.recipe h4 {
+    font-size: 1.5rem;
+}
+
+.ingredient-heading {
+    padding: 1rem 0;
+}
+
+.step-heading {
+    padding: 0.5rem 0;
+}
