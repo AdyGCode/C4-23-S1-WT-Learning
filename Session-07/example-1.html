@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Example 1</title>
+
+    <!-- External Fonts -->
+    <!-- Google Fonts: https://fonts.google.com/ -->
+
+
+    <!-- Stylesheets -->
+    <!-- CSS Reset https://elad2412.github.io/the-new-css-reset/ -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link href="assets/css/fontawesome.css" rel="stylesheet">
+    <link href="assets/css/brands.css" rel="stylesheet">
+    <link href="assets/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- JavaScript -->
+
+</head>
+<body>
+<div class="container">
+    <header class="site-header">
+        <div>
+            <h1>Form Demonstrations</h1>
+            <p>A quick demo of form fields and controls</p>
+        </div>
+        <img src="https://placehold.co/96x96/ff0000/ffffff/?text=logo" alt="Company/Site Logo">
+    </header>
+
+    <nav class="site-navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="example-1.html" class="active">Example 1</a></li>
+            <li><a href="example-2.html">Example 2</a></li>
+            <li><a href="example-3.html">Example 3</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <header>
+                <h2>Example Form 1</h2>
+            </header>
+            <!-- this form will not do anything useful, it has no 'action' to perform -->
+            <section id="text-fields">
+                <header>
+                    <h3>Text Fields</h3>
+                </header>
+                <!-- action="save-results.php"
+                     https:// ensure it is secured -->
+                <form action="#" method="post">
+
+                    <div class="form-control">
+                        <label for="textEnabled">Name</label>
+                        <input type="text"
+                               id="textEnabled"
+                               name="text-enabled"
+                               placeholder="Enter your name here">
+                    </div>
+
+                    <div class="form-control">
+                        <label for="textDisabled">Disabled</label>
+                        <input type="text"
+                               id="textDisabled"
+                               name="text-disabled"
+                               placeholder="This is disabled"
+                               disabled>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="selectDropdown">Select Drop Down</label>
+                        <select id="selectDropdown"
+                                name="select-field">
+
+                            <option value=""
+                                    disabled
+                                    selected>Select an Option!</option>
+
+                            <optgroup label="Option Group">
+                                <option value="Option Value 1">
+                                    Option Text 1
+                                </option>
+                                <option value="55">
+                                    Text for Option 2
+                                </option>
+                            </optgroup>
+                            <option value="Option Value 3">
+                                Option Text 3
+                            </option>
+                            <option value="Option Value 4"
+                                    disabled>
+                                Disabled Option
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="textArea">Text Area</label>
+                        <textarea
+                                id="textArea"
+                                name="text-area"
+                                placeholder="This is a text area"></textarea>
+                    </div>
+
+                    <div class="form-control">
+                        <p></p>
+                        <div>
+                            <button type="submit">Submit</button>
+                            <button type="reset">Clear</button>
+                        </div>
+                    </div>
+
+                </form>
+
+            </section>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div>
+            <p>&copy; 2023 YOUR NAME, all rights reserved.</p>
+            <ul>
+                <li><a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                    <span class="reader">Facebook</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="fa-brands fa-twitter  "></i>
+                    <span class="reader">Twitter</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span class="reader">Instagram</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="fa-brands fa-tiktok"></i>
+                    <span class="reader">TikTok</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="fa-solid fa-ellipsis"></i>
+                    <span class="reader">...</span>
+                </a></li>
+            </ul>
+        </div>
+        <section>
+            <h2>Site Information</h2>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </section>
+    </footer>
+</div>
+</body>
+</html>
