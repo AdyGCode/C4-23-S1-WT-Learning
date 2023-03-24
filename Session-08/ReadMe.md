@@ -56,7 +56,8 @@ c:\ProgramData\Laragon
 ## Useful tutorials
 
 - https://dev.to/billraymond/creating-a-pure-responsive-css-grid-hero-image-or-banner-image-2pej
-- 
+- https://sabe.io/blog/css-keep-footer-bottom (modern way)
+- https://matthewjamestaylor.com/bottom-footer (not so modern way)
 
 
 
