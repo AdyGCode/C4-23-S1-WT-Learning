@@ -103,8 +103,8 @@ h2 {
 
 
 .site-footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
     font-size: 0.8rem;
     margin-top: 3rem;
 }
@@ -115,8 +115,13 @@ h2 {
 
 .site-footer h2 {
     font-weight: bold;
+    font-size: 1rem;
 }
 
+.site-footer>div{
+    flex-grow: 1;
+    background:rgba(0,255,0,0.25);
+}
 .site-footer section:first-child {
     background: #ffdddd;
 }
