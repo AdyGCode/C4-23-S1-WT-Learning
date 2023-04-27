@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Session 11: JS 01 Example</title>
+    <title>Session 12 / JS & TwCSS / Part 2</title>
 
     <!-- CSS -->
     <!-- reset if needed, not if using tailwind -->
@@ -16,63 +16,94 @@
     <!-- Personal CSS if required -->
 
     <!-- JavScript -->
+    <script src="assets/js/js-02-decisions.js"></script>
 
 </head>
 <body>
 <div class="sticky top-0">
-    <header class="bg-slate-700 text-white p-2 flex ">
-        <h1 class="text-2xl">Session 11</h1>
-        <p class="pt-2 pl-4">JS Example 1</p>
+    <header class="bg-amber-700 text-white p-2 flex gap-4">
+        <h1 class="text-4xl">Session 12</h1>
+        <p class="pt-3 text-xl"><i class="fa-brands fa-js"></i> JavaScript and TailwindCSS / Part 2</p>
     </header>
     <nav class="mb-4 bg-slate-200">
         <!-- ul>li*5>a[href=javascript-$$.html]{JavaScript Example $$} -->
-        <ul class="flex flex-row px-2 py-1 items-center justify-between">
+        <ul class="flex flex-row px-2 py-1 pt-3 items-center gap-4">
+            <li>
+                <a href="./"
+                   class="px-2 py-1
+                          rounded-t
+                          border-t-0 border-x-0 border-b-2 border-amber-900 bg-amber-900 text-amber-100
+                          hover:border-amber-500 hover:bg-amber-300 hover:text-amber-800
+                          transition duration-1000 ease-in-out  ">
+                    <i class="fa fa-home"></i>
+                </a>
+            </li>
             <li>
                 <a href="javascript-01.html"
-                   class="px-2 pb-1
-                          rounded-t-lg
-                          border-b-2 border-slate-500
-                          hover:border-red-500 hover:bg-red-900 hover:text-white
+                   class="px-2 py-1
+                          rounded-t
+                          border-t-0 border-x-0 border-b-2 border-amber-900 bg-amber-900 text-amber-100
+                          hover:border-amber-500 hover:bg-amber-300 hover:text-amber-800
                           transition duration-1000 ease-in-out  ">Example 01</a>
             </li>
             <li>
                 <a href="javascript-02.html"
-                   class="px-2 pb-1
-                          rounded-t-lg
-                          border-b-2 border-slate-500
-                          hover:border-amber-500 hover:bg-amber-900 hover:text-white
+                   class="px-2 py-1
+                          rounded-t
+                          border-t-0 border-x-0 border-b-2 border-amber-900 bg-amber-900 text-amber-100
+                          hover:border-amber-500 hover:bg-amber-300 hover:text-amber-800
                           transition duration-1000 ease-in-out  ">Example 02</a>
             </li>
             <li>
                 <a href="javascript-03.html"
-                   class="px-2 pb-1
-                          rounded-t-lg
-                          border-b-2 border-slate-500
-                          hover:border-stone-500 hover:bg-stone-900 hover:text-white
+                   class="px-2 py-1
+                          rounded-t
+                          border-t-0 border-x-0 border-b-2 border-amber-900 bg-amber-900 text-amber-100
+                          hover:border-amber-500 hover:bg-amber-300 hover:text-amber-800
                           transition duration-1000 ease-in-out  ">Example 03</a>
             </li>
             <li>
                 <a href="javascript-04.html"
-                   class="px-2 pb-1
-                          rounded-t-lg
-                          border-b-2 border-slate-500
-                          hover:border-indigo-500 hover:bg-indigo-900 hover:text-white
+                   class="px-2 py-1
+                          rounded-t
+                          border-t-0 border-x-0 border-b-2 border-amber-900 bg-amber-900 text-amber-100
+                          hover:border-amber-500 hover:bg-amber-300 hover:text-amber-800
                           transition duration-1000 ease-in-out  ">Example 04</a>
             </li>
+
             <li>
-                <a href="javascript-05.html"
-                   class="px-2 pb-1
-                          rounded-t-lg
-                          border-b-2 border-slate-500
-                          hover:border-green-500 hover:bg-green-900 hover:text-white
-                          transition duration-1000 ease-in-out  ">Example 05</a>
+                <a href="javascript-xx.html"
+                   class="px-2 py-1
+                          rounded-t
+                          border-t-0 border-x-0 border-b-2 border-amber-900 bg-amber-900 text-amber-100
+                          hover:border-amber-500 hover:bg-amber-300 hover:text-amber-800
+                          transition duration-1000 ease-in-out  ">Example xx</a>
             </li>
         </ul>
     </nav>
 </div>
 
 <main class="w-3/4 mx-auto bg-slate-50 p-4 border border-slate-200 h-screen mb-4">
-
+    <article>
+        <header class="-mt-4 -mx-4 px-4 bg-amber-700 text-amber-100">
+            <h2 class="text-3xl py-4 mb-6">Session 12: Examples 02</h2>
+        </header>
+        <section class="my-4">
+            <h3 class="text-2xl text-amber-800">
+                <i class="fa-brands fa-js"></i> JavaScript decisions
+            </h3>
+            <ul class="ml-6">
+                <li>if ...</li>
+                <li>if ... else ...</li>
+                <li>nested if...</li>
+                <li>switch ...</li>
+                <li>ternary</li>
+            </ul>
+        </section>
+        <footer class="my-4">
+            <p>Session 12 was presented on 28/4/2023</p>
+        </footer>
+    </article>
 
 </main>
 <footer class="bg-black text-gray-500 grid grid-cols-2 p-6">
