@@ -10,40 +10,42 @@
  * Dependencies:    n/a
  */
 
-const emptyObject1 = {}
-const emptyObject2 = new Object()
-const emptyObject3 = Object.create({})
+const emptyObject1 = {}; // The normal way to define an object
+const emptyObject2 = new Object();
+const emptyObject3 = Object.create({});
 
-const feline = {name: "Freda"}
+const feline = {name: 'Freda'};
 
+// we can use let or const as objects are REFERENCED in memory
 let game = {
-    title: 'bearicades',
-    players: [1, 4,],
-    tags: ['card', 'survival',],
-    duration: [30, 45,],
-}
+  title: 'bearicades',
+  players: [1, 4],
+  tags: ['card', 'survival'],
+  duration: [30, 45],
+  rating: 4.5,
+};
 
-console.log(`Game title: ${game.title}`)
-console.log(`${game.players[0]} - ${game.players[1]} Players`)
+console.log(`Game title: ${game.title}`);
+console.log(`${game.players[0]} to ${game.players[1]} Players`);
 
-console.log(game)
-console.log("Updating the game title property")
-game.title = "Bearicades"
+console.log(game);
+console.log('Updating the game title property');
+game.title = 'Bearicades';
 
-console.log(game)
-console.log("Adding new properties")
-game.company = "9th Level Games"
-game.dummyProperty = "This is to be removed"
-game['url'] = "https://9thlevel.com"
+console.log(game);
+console.log('Adding new properties');
+game.company = '9th Level Games';
+game.dummyProperty = 'This is to be removed';
+game['url'] = 'https://9thlevel.com';
 
-console.log(game)
-console.log("Dummy Property: ", game.dummyProperty)
+console.log(game);
+console.log('Dummy Property: ', game.dummyProperty);
 
-game.dummyProperty = null // this does NOT delete the property
-console.log("Wrong way to delete Dummy Property: ",game.dummyProperty)
+game.dummyProperty = null; // this does NOT delete the property
+console.log('Wrong way to delete Dummy Property: ', game.dummyProperty);
 
-delete game.dummyProperty // correct way to delete a property
-console.log("Delete Dummy Property: ",game.dummyProperty)
+delete game.dummyProperty; // correct way to delete a property
+console.log('Delete Dummy Property: ', game.dummyProperty);
 
 
 

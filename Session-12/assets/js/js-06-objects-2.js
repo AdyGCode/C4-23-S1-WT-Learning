@@ -11,30 +11,37 @@
  */
 
 const vehicle = {
-    type: "Car",
-    brand: "Hyundai",
-    model: "Kona",
-    engineSize: 2750,
-    start: function () {
-        console.log(`${this.type} engine started`)
-    },
-    stop: function () {
-        console.log(`${this.type} engine stopped`)
-    },
-    goTo: function (destination) {
-        console.log(`${this.type} is going to ${destination}`)
-    },
-}
+  type: 'Car',
+  brand: 'Hyundai',
+  model: 'Kona',
+  engineSize: 2750,
+  start: function() {
+    console.log(`${this.type} engine started`);
+  },
+  stop: () => {
+    console.log(`${this.type} engine stopped`);
+  },
+  goTo: function(destination) {
+    console.log(`${this.type} is going to ${destination}`);
+  },
+};
 
-vehicle.start()
-vehicle.goTo("Darwin")
-vehicle.stop()
+vehicle.start();
+vehicle.goTo('Darwin');
+vehicle.stop();
 
-const displayCarDetails = ({brand, model, engineSize}) => console.log(`This ${brand} ${model} has a ${engineSize}cc engine.`)
-displayCarDetails(vehicle)
+const displayCarDetails = ({brand, model, engineSize}) => {
+  console.log(`This ${brand} ${model} has a ${engineSize}cc engine.`);
+};
+displayCarDetails(vehicle);
 
-newVehicle = {...vehicle}
-newVehicle.model="Accent"
-newVehicle.engineSize=2000
-displayCarDetails(newVehicle)
+// Does not COPY, it points to the same location as the original
+// newVehicle = vehicle
+
+// To copy we use the SPREAD operator (...)
+const newVehicle = {...vehicle};
+newVehicle.model = 'Accent';
+newVehicle.engineSize = 2000;
+displayCarDetails(newVehicle);
+displayCarDetails(vehicle);
 

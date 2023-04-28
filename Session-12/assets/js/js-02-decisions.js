@@ -10,77 +10,83 @@
  * Dependencies:    n/a
  */
 
-console.log("--------------------------------------------")
+console.log('--------------------------------------------');
 /* plain if ... then  ... */
 
-let totalMarks = 84
-const passMark = 80
-const distinctionMark = 95
-const maxMark = 100
+let totalMarks = 84;
+const passMark = 80;
+const distinctionMark = 95;
+const maxMark = 100;
 
 if (totalMarks >= passMark) {
-    console.log(`You got ${totalMarks}/${maxMark} which is a "Pass".`)
+  console.log(`You got ${totalMarks}/${maxMark} which is a "Pass".`);
 }
 
-console.log("--------------------------------------------")
+console.log('--------------------------------------------');
 /* plain if ... then ... else */
 
-totalMarks = 74
+totalMarks = 74;
+let message = null;
 if (totalMarks >= passMark) {
-    console.log(`Congratulations, with ${totalMarks}/${maxMark} you have achieved a "Pass".`)
+  message = `Congratulations, with ${totalMarks}/${maxMark} you have achieved a "Pass".`;
 } else {
-    console.log(`Unfortunately with ${totalMarks}/${maxMark} you have a "Fail".`)
+  message = `Unfortunately with ${totalMarks}/${maxMark} you have a "Fail".`;
 }
+console.log(message);
 
-console.log("--------------------------------------------")
+console.log('--------------------------------------------');
 /* nested if ... then ... else ... */
 
-totalMarks = 97
+totalMarks = 97;
 if (totalMarks >= passMark) {
-    if (totalMarks < distinctionMark) {
-        console.log(`Congratulations, with ${totalMarks}/${maxMark} you have achieved a "Pass".`)
-    } else {
-        console.log(`Congratulations, with ${totalMarks}/${maxMark} you have achieved a "Distinction".`)
-    }
+  if (totalMarks < distinctionMark) {
+    console.log(
+        `Congratulations, with ${totalMarks}/${maxMark} you have achieved a "Pass".`);
+  } else {
+    console.log(
+        `Congratulations, with ${totalMarks}/${maxMark} you have achieved a "Distinction".`);
+  }
 } else {
-    console.log(`Unfortunately with ${totalMarks}/${maxMark} you have a "Fail".`)
+  console.log(`Unfortunately with ${totalMarks}/${maxMark} you have a "Fail".`);
 }
 
-console.log("--------------------------------------------")
+console.log('--------------------------------------------');
 /* if ... then ... else if ... */
-totalMarks = 94
+totalMarks = 94;
 if (totalMarks < passMark) {
-    console.log(`Unfortunately with ${totalMarks}/${maxMark} you have a "Fail".`)
+  console.log(`Unfortunately with ${totalMarks}/${maxMark} you have a "Fail".`);
 } else if (totalMarks < distinctionMark) {
-    console.log(`Congratulations, with ${totalMarks}/${maxMark} you have achieved a "Pass".`)
+  console.log(
+      `Congratulations, with ${totalMarks}/${maxMark} you have achieved a "Pass".`);
 } else {
-    console.log(`Congratulations, with ${totalMarks}/${maxMark} you have achieved a "Distinction".`)
+  console.log(
+      `Congratulations, with ${totalMarks}/${maxMark} you have achieved a "Distinction".`);
 }
 
-console.log("--------------------------------------------")
+console.log('--------------------------------------------');
 /* switch */
-totalMarks10 = Math.floor(Math.random() * 11)
-const maxMark10 = 10
+totalMarks10 = Math.floor(Math.random() * 10.99);
+const maxMark10 = 10;
 switch (totalMarks10) {
-    case 0:
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-    case 5:
-    case 6:
-        result = 'Fail'
-        break
-    case 7:
-    case 8:
-        result = 'Pass'
-        break
-    case 9:
-    case 10:
-        result = 'Distinction'
-        break
-    default:
-        result = "ERROR in Mark"
+  case 0:
+  case 1:
+  case 2:
+  case 3:
+  case 4:
+  case 5:
+  case 6:
+    result = 'Fail';
+    break;
+  case 7:
+  case 8:
+    result = 'Pass';
+    break;
+  case 9:
+  case 10:
+    result = 'Distinction';
+    break;
+  default:
+    result = 'ERROR in Mark';
 }
-console.log(`Result: ${totalMarks10}/${maxMark10} --> ${result}`)
-console.log("--------------------------------------------")
+console.log(`Result: ${totalMarks10}/${maxMark10} --> ${result}`);
+console.log('--------------------------------------------');
