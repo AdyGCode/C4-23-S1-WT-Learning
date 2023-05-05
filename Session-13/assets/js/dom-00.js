@@ -44,3 +44,4 @@ nameEntry.addEventListener('keyup', textChanged);
 
 celsiusEntry.addEventListener('keyup', temperatureChanged);
 celsiusEntry.addEventListener('keypress', temperatureChanged);
+
