@@ -19,7 +19,7 @@
 
 
 </head>
-<body>
+<body class="flex flex-col">
 <div class="sticky top-0">
     <header class="bg-teal-700 text-white p-2 flex gap-4">
         <h1 class="text-4xl">Session 14</h1>
@@ -51,7 +51,7 @@
     </nav>
 </div>
 
-<main class="w-3/4 mx-auto bg-slate-50 p-4 border border-slate-200 h-screen mb-4">
+<main class="w-3/4 mx-auto bg-slate-50 p-4 border border-slate-200 mb-4">
     <article>
         <header class="-mt-4 -mx-4 px-4 bg-teal-700 text-teal-100">
             <h2 class="text-3xl py-4 mb-6">Session 14</h2>
@@ -92,7 +92,9 @@
                     Write a function that will be given a value that is a string and then return it with all spaces
                     removed.
                 </p>
-                <p>Next create a form that has a label and a <code class="bg-white/50 text-blue-800 p-1 rounded rounded-lg">&lt;textarea&gt;&lt;/textarea&gt;</code> for the user to enter data.
+                <p>Next create a form that has a label and a <code
+                        class="bg-white/50 text-blue-800 p-1 rounded rounded-lg">&lt;textarea&gt;&lt;/textarea&gt;</code>
+                    for the user to enter data.
                 </p>
                 <p>
                     The form will also have a submit button which will process the text from the textarea, and display
@@ -101,22 +103,60 @@
 
             </section>
         </article>
+
         <article class="bg-teal-900/10 p-2">
             <header class="bg-teal-900 text-teal-50 p-2 -mx-2 -mt-2">
                 <h4>Exercise 2</h4>
             </header>
-            <section>...</section>
+            <section class="py-4 flex flex-col gap-4">
+                <p> In this exercise you will be creating a javascript program that creates an array of user entered
+                    words.</p>
+                <p>To do so follow these steps:</p>
+                <ol class="list-decimal pl-6 pr-4">
+                    <li>Create a form with a label, text input and button</li>
+                    <li>The label will read "Enter Word", the text inout will be named "word", and button will display
+                        the "add" and be a submit type button.
+                    </li>
+                    <li>When the user enters a word, and presses enter, the form will NOT refresh the page.</li>
+                    <li>Instead the javascript will check to see if the word is blank, and if so nothing is done.</li>
+                    <li>If a word has been entered the JavaScript will then add the word to an array</li>
+                    <li>After adding the word to the array, the Javascript then selects the whole word in the word field
+                        ready for the user to type in the next word.
+                    </li>
+                    <li>Finally, the javascript will update the output area by adding each new word to a list, with the
+                        most recent shown first.
+                    </li>
+                </ol>
+                <h6 class="bg-teal-900/20 text-teal-900 p-2 -mx-2 -mt-2">Example of the word list output</h6>
+                <ul class="border border-teal-700 rounded rounded-xl list-decimal py-2 px-6">
+                    <li>banana</li>
+                    <li>zebra</li>
+                    <li>apple</li>
+                </ul>
+                <p>When a new word, "poppy" is added, the output will be:</p>
+                <ul class="border border-teal-700 rounded rounded-xl list-decimal py-2 px-6">
+                    <li>poppy</li>
+                    <li>banana</li>
+                    <li>zebra</li>
+                    <li>apple</li>
+                </ul>
+            </section>
         </article>
         <article class="bg-teal-900/10 p-2">
             <header class="bg-teal-900 text-teal-50 p-2 -mx-2 -mt-2">
                 <h4>Exercise 3</h4>
             </header>
-            <section>...</section>
+            <section class="py-4 flex flex-col gap-4">
+                <p> Duplicate the previous exercise </p>
+                <p> In the output area, create a header that contains a form with a text box.</p>
+                <p>When text is entered in the new text box, the JavaScript is to filter and show ONLY the items that
+                    match the entered text.</p>
+            </section>
         </article>
     </section>
 
-
 </main>
+
 <footer class="bg-black text-gray-500 grid grid-cols-2 p-6">
     <div class="">
         <p>Footer 1</p>
