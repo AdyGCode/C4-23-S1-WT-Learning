@@ -20,9 +20,16 @@ function textChanged(event) {
 }
 
 const temperatureChanged = (event) => {
-  const temp = parseFloat(celsiusEntry.value);
+  let temp = parseFloat(celsiusEntry.value);
   let kelvin = (273.16 + temp).toFixed(2);
-  style = changeCelsiusColour(temp);
+  let style = changeCelsiusColour(temp);
+
+  if (isNaN(temp)) {
+    style = '';
+    temp = '-';
+    kelvin = '-';
+  }
+
   outputZone.innerHTML = `<p><span class="font-bold ${style}">
                     ${temp}&deg;C</span> is ${kelvin}K.</p>`;
 };
