@@ -16,7 +16,8 @@
     <!-- Personal CSS if required -->
 
     <!-- JavScript -->
-
+    <script src="assets/js/dates-times-timers.js"
+            type="application/javascript" defer></script>
 
 </head>
 <body class="flex flex-col">
@@ -68,16 +69,37 @@
         </footer>
     </article>
 
-    <article>
+    <article class="mb-8">
         <header>
-            <h3>Timers and Other Events</h3>
+            <h3 class="font-bold">Timers and Other Events</h3>
         </header>
         <section>
-
+            <ul class="flex flex-col gap-1 my-4 font-medium pl-4">
+                <li>Timers</li>
+                <li>Dates & Times</li>
+            </ul>
         </section>
-        <footer>
-
+        <footer class="flex flex-col gap-4 my-4">
+            <div>Date</div>
+            <div>Time</div>
+            <div class="bg-slate-900 rounded-lg text-white p-4"
+                 id="countLocation">
+                Counter: 0
+            </div>
         </footer>
+    </article>
+
+    <article class="border border-slate-500
+                    rounded-lg mb-8 p-8
+                    text-center items-center content-center
+                    flex flex-col gap-4">
+        <header>
+        <h3>My Wonderful Clock</h3>
+        </header>
+        <section class="flex flex-col gap-4">
+            <p>Wednesday, 1st April</p>
+            <p class="text-8xl"><span>10</span><span>:</span><span>45</span></p> <!-- each second the : will toggle on and off -->
+        </section>
     </article>
 
     <section class="grid grid-cols-2 gap-8">
