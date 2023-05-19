@@ -47,6 +47,22 @@
                           transition duration-1000 ease-in-out  "
                    href="../Session-13">Session-13</a>
             </li>
+            <li>
+                <a class="px-2 py-1
+                          rounded-t
+                          border-t-0 border-x-0 border-b-2 border-teal-900 bg-teal-900 text-teal-100
+                          hover:border-teal-500 hover:bg-teal-300 hover:text-teal-800
+                          transition duration-1000 ease-in-out  "
+                   href="../Session-14">Session-14</a>
+            </li>
+            <li>
+                <a class="px-2 py-1
+                          rounded-t
+                          border-t-0 border-x-0 border-b-2 border-teal-900 bg-teal-900 text-teal-100
+                          hover:border-teal-500 hover:bg-teal-300 hover:text-teal-800
+                          transition duration-1000 ease-in-out  "
+                   href="../Session-15">Session-15</a>
+            </li>
 
         </ul>
     </nav>
@@ -114,76 +130,41 @@
         <article class="bg-teal-900/10 p-2">
             <header class="bg-teal-900 text-teal-50 p-2 -mx-2 -mt-2">
                 <h4>
-                    Exercise 1
+                    Exercise 1: Faster Counter
                 </h4>
             </header>
             <section class="py-4 flex flex-col gap-4">
                 <p>
-                    One way to clean incoming data is to remove any errors or unnecessary spaces.
+                    Update the counter to execute every ONE second instead of every 2.5 seconds.
                 </p>
-                <p>
-                    Write a function that will be given a value that is a string and then return it with all spaces
-                    removed.
-                </p>
-                <p>Next create a form that has a label and a <code
-                        class="bg-white/50 text-blue-800 p-1 rounded rounded-lg">&lt;textarea&gt;&lt;/textarea&gt;</code>
-                    for the user to enter data.
-                </p>
-                <p>
-                    The form will also have a submit button which will process the text from the textarea, and display
-                    the results in an output area underneath the form.
-                </p>
-
             </section>
         </article>
 
         <article class="bg-teal-900/10 p-2">
             <header class="bg-teal-900 text-teal-50 p-2 -mx-2 -mt-2">
-                <h4>Exercise 2</h4>
+                <h4>Exercise 2: Date for a Clock</h4>
             </header>
             <section class="py-4 flex flex-col gap-4">
-                <p> In this exercise you will be creating a javascript program that creates an array of user entered
-                    words.</p>
-                <p>To do so follow these steps:</p>
-                <ol class="list-decimal pl-6 pr-4">
-                    <li>Create a form with a label, text input and button</li>
-                    <li>The label will read "Enter Word", the text inout will be named "word", and button will display
-                        the "add" and be a submit type button.
-                    </li>
-                    <li>When the user enters a word, and presses enter, the form will NOT refresh the page.</li>
-                    <li>Instead the javascript will check to see if the word is blank, and if so nothing is done.</li>
-                    <li>If a word has been entered the JavaScript will then add the word to an array</li>
-                    <li>After adding the word to the array, the Javascript then selects the whole word in the word field
-                        ready for the user to type in the next word.
-                    </li>
-                    <li>Finally, the javascript will update the output area by adding each new word to a list, with the
-                        most recent shown first.
-                    </li>
-                </ol>
-                <h6 class="bg-teal-900/20 text-teal-900 p-2 -mx-2 -mt-2">Example of the word list output</h6>
-                <ul class="border border-teal-700 rounded rounded-xl list-decimal py-2 px-6">
-                    <li>banana</li>
-                    <li>zebra</li>
-                    <li>apple</li>
-                </ul>
-                <p>When a new word, "poppy" is added, the output will be:</p>
-                <ul class="border border-teal-700 rounded rounded-xl list-decimal py-2 px-6">
-                    <li>poppy</li>
-                    <li>banana</li>
-                    <li>zebra</li>
-                    <li>apple</li>
+                <p>This exercise asks you to create the first part of a clock.</p>
+                <p>In the class we looked at the use of setTimeout, setInterval and the Date object.</p>
+                <p>Using this knowledge, and the provided HTML in this file, write the JS to:</p>
+                <ul class="list-decimal pl-6 pr-4">
+                    <li>Add the Date to the clock in the form "<code>Wednesday 1 May</code>"</li>
+                    <li>Do <strong>not</strong> add the <code>st</code>, <code>nd</code>, <code>rd</code>, <code>th</code> to the date number.</li>
                 </ul>
             </section>
         </article>
         <article class="bg-teal-900/10 p-2">
             <header class="bg-teal-900 text-teal-50 p-2 -mx-2 -mt-2">
-                <h4>Exercise 3</h4>
+                <h4>Exercise 3: Making date be 1st, 2nd, 3rd, 4th, etc</h4>
             </header>
             <section class="py-4 flex flex-col gap-4">
-                <p> Duplicate the previous exercise </p>
-                <p> In the output area, create a header that contains a form with a text box.</p>
-                <p>When text is entered in the new text box, the JavaScript is to filter and show ONLY the items that
-                    match the entered text.</p>m
+                <p>Continuing your clock exercise, we now want the date to have the correct ordinal indicator.</p>
+                <p>Create a function <code>myOrdinal</code> which is given an integer, and it will output a string with the number and its ordinal.</p>
+                <p>1st, 2nd, 3rd, 4th, 5th, ... 11th, 12th, 13th... 21st, 22nd, 23rd, ...</p>
+                <ul class="list-decimal pl-6 pr-4">
+                    <li>Hint: https://www.sitepoint.com/convert-numbers-to-ordinals-javascript/</li>
+                </ul>
             </section>
         </article>
     </section>

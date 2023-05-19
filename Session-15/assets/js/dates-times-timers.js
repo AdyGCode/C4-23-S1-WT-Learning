@@ -8,7 +8,7 @@
 
 // dom = Document Object Model
 // I use a variable to hold the dom when working on it
-let dom = document;
+let dom = document
 
 /* Time out */
 function myTimeout() {
@@ -28,7 +28,7 @@ const countLocation = dom.getElementById('countLocation');
 
 function updateCounter() {
   count++;
-  const style = styles[count % 3];
+  const style = styles[count % styles.length];
   countLocation.innerHTML = `<p>Counter: <span class="${style}">${count}</span></p>`;
 }
 
