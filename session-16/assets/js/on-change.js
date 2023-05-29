@@ -1,7 +1,7 @@
 /**
  * Drop Downs and Change Events
  *
- * Filename:  Session-16/assets/js/on-change.js
+ * Filename:  session-16/assets/js/on-change.js
  * Author:
  * Version:   1.0
  */

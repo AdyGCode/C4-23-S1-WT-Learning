@@ -5,7 +5,7 @@
     <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
           name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <title>Session 16 / More JS & TailWind</title>
+    <title>Session 15 / More JS & TailWind</title>
 
     <!-- CSS -->
     <!-- reset if needed, not if using tailwind -->
@@ -16,14 +16,14 @@
     <!-- Personal CSS if required -->
 
     <!-- JavScript -->
-    <script src="assets/js/on-change.js"
+    <script src="assets/js/dates-times-timers.js"
             type="application/javascript" defer></script>
 
 </head>
 <body class="flex flex-col">
 <div class="sticky top-0">
     <header class="bg-lime-700 text-white p-2 flex gap-4">
-        <h1 class="text-4xl">Session 16</h1>
+        <h1 class="text-4xl">Session 15</h1>
         <p class="pt-3 text-xl"><i class="fa-brands fa-js"></i> JavaScript and TailwindCSS / Part 5</p>
     </header>
     <nav class="mb-4 bg-slate-200">
@@ -45,7 +45,7 @@
                           border-t-0 border-x-0 border-b-2 border-lime-900 bg-lime-900 text-lime-100
                           hover:border-lime-500 hover:bg-lime-300 hover:text-lime-800
                           transition duration-1000 ease-in-out  "
-                   href="../Session-13">Session-13</a>
+                   href="../session-13">Session-13</a>
             </li>
             <li>
                 <a class="px-2 py-1
@@ -53,7 +53,7 @@
                           border-t-0 border-x-0 border-b-2 border-lime-900 bg-lime-900 text-lime-100
                           hover:border-lime-500 hover:bg-lime-300 hover:text-lime-800
                           transition duration-1000 ease-in-out  "
-                   href="../Session-14">Session-14</a>
+                   href="../session-14">Session-14</a>
             </li>
             <li>
                 <a class="px-2 py-1
@@ -61,7 +61,7 @@
                           border-t-0 border-x-0 border-b-2 border-lime-900 bg-lime-900 text-lime-100
                           hover:border-lime-500 hover:bg-lime-300 hover:text-lime-800
                           transition duration-1000 ease-in-out  "
-                   href="../Session-16">Session-16</a>
+                   href="">Session-15</a>
             </li>
 
         </ul>
@@ -72,64 +72,95 @@
 
     <article>
         <header class="-mt-4 -mx-4 px-4 bg-lime-700 text-lime-100">
-            <h2 class="text-3xl py-4 mb-6">Session 16</h2>
+            <h2 class="text-3xl py-4 mb-6">Session 15</h2>
         </header>
         <section class="my-4 flex flex-col gap-4">
             <h3 class="text-2xl text-lime-800">
                 <i class="fa-brands fa-js"></i>
                 Content
             </h3>
-            <p>Session 16 - On Change and Portfolio Work</p>
+            <p>Session 15 - Timers, Dates and time</p>
         </section>
 
         <footer class="my-4">
-            <p>Session 16 was presented on 26/05/23</p>
+            <p>Session 15 was presented on 19/05/23</p>
         </footer>
     </article>
-
     <section class="grid grid-cols-2 gap-8">
         <article class="mb-8">
-            <header class="mb-4">
-                <h3 class="font-bold">On Change Demo Area</h3>
+            <header>
+                <h3 class="font-bold">Timers and Other Events Demo Space</h3>
             </header>
             <section>
-                <label for="select" class="w-full my-2 block">Changing the value of the select box will update the output</label>
-                <select id="select" class="w-full border border-1 border-lime-500 mt-1 mb-6 p-2">
-                    <option value="" disabled selected>--Choose an option--</option>
-                    <option value="horse">Horse 🐴</option>
-                    <option value="wolf">Wolf 🐺</option>
-                    <option value="fox" >Fox 🦊</option>
-                </select>
+                <p>Useful links for you...</p>
+                <ul class="flex flex-col gap-1 my-4 font-medium pl-4">
+                    <li>
+                        <a href="https://www.digitalocean.com/community/tutorials/understanding-date-and-time-in-javascript">
+                            Understanding date and time in JS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://javascript.info/date">
+                            Date Types
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.toptal.com/software/definitive-guide-to-datetime-manipulation">
+                            Date/Time Manipulation
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://dev.to/sarahokolo/mastering-internationalization-and-localization-in-javascript-a-comprehensive-guide-50ma">
+                            Internationalisation and Localisation
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://css-tricks.com/everything-you-need-to-know-about-date-in-javascript/">
+                            Everything you need to know about JS Dates and Times
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.coderchamp.com/formatting-dates-in-javascript/">
+                        Formatting dates in JS
+                    </a>
+                    </li>
+                    <li>
+                        <a href="https://www.sitepoint.com/convert-numbers-to-ordinals-javascript/">
+                        Ordinals in JS
+                    </a>
+                    </li>
+                    <li>
+                        <a href="https://www.sitepoint.com/how-to-learn-javascript-fast/">
+                            Six Mind Tricks to help Learn JS Fast
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.diigo.com/profile/Ady_Gould?query=javascript">
+                            JavaScript Links on Adrian's Diigo
+                        </a>
+                    </li>
+                </ul>
 
             </section>
             <footer class="flex flex-col gap-4 my-4">
                 <div class="bg-slate-900 rounded-lg text-white p-4"
-                     id="outputArea">
-
+                     id="countLocation">
+                    Counter: 0
                 </div>
             </footer>
         </article>
 
         <article class="border border-slate-500
                     rounded-lg mb-8 p-8
-
+                    text-center items-center content-center
                     flex flex-col gap-4">
             <header>
-                <h3 class="text-xl font-medium">In and Out of Class Activities</h3>
+                <h3>My Wonderful Clock</h3>
             </header>
             <section class="flex flex-col gap-4">
-                <dl>
-                    <dt>Portfolio Work</dt>
-                    <dd class="pl-4">Work on your portfolio part 3</dd>
-                    <dt>Useful links for you...</dt>
-                    <dd class="pl-4">
-                    <a href="https://www.diigo.com/profile/Ady_Gould?query=javascript"
-                        class="border border-x-0 border-t-0 border-b-1 border-lime-500
-                               hover:border-lime-900 hover:text-lime-500 ease-in-out transition duration-500 pb-1">
-                        JavaScript Links on Adrian's Diigo
-                        </a>
-                    </dd>
-                </dl>
+                <p>Wednesday, 1st April</p>
+                <p class="text-8xl"><span>10</span><span>:</span><span>45</span></p>
+                <!-- each second the : will toggle on and off -->
             </section>
         </article>
 
