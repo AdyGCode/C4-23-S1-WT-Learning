@@ -13,10 +13,15 @@
     <link href="../assets/css/fontawesome.css" rel="stylesheet">
     <link href="../assets/css/brands.css" rel="stylesheet">
     <link href="../assets/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles/srcery.min.css">
+
     <!-- Personal CSS if required -->
 
     <!-- JavScript -->
-    <script src="./js/do-assessments.js" defer></script>
+    <script src="./assets/js/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <script src="assets/js/js-loop-on-screen.js" defer></script>
 
 </head>
 <body class="flex flex-col min-h-screen">
@@ -252,6 +257,17 @@
         <article class="bg-rose-900/10 p-2 shadow-md shadow-rose-800/25 border border-rose-800">
             <header class="bg-rose-800 text-white p-2 -mx-2 -mt-2">
                 <h4>
+                    Demo Area
+                </h4>
+            </header>
+            <section class="py-4 flex flex-col gap-4">
+                <div id="output"></div>
+            </section>
+        </article>
+
+        <article class="bg-rose-900/10 p-2 shadow-md shadow-rose-800/25 border border-rose-800">
+            <header class="bg-rose-800 text-white p-2 -mx-2 -mt-2">
+                <h4>
                     Nothing to see here
                 </h4>
             </header>
@@ -261,16 +277,81 @@
                 </p>
                 <p>Ok so a small misdirection... have you noted that...</p>
                 <ul class="flex flex-col gap-2">
-                    <li class="pl-0 list-disc list-none hover:list-disc ml-8 transition ease-in-out hover:text-rose-500 duration-500">
+                    <li class="pl-0 list-disc hover:list-disc ml-8 transition ease-in-out hover:text-rose-500 duration-500">
                         the footer is now correctly positioned at the bottom of the screen content
                     </li>
-                    <li class="pl-0 list-disc list-none hover:list-disc ml-8 transition ease-in-out hover:text-rose-500 duration-500">
+                    <li class="pl-0 list-disc hover:list-disc ml-8 transition ease-in-out hover:text-rose-500 duration-500">
                         the main area fits the screen no matter if the content does not
                     </li>
-                    <li class="pl-0 list-disc list-none hover:list-disc ml-8 transition ease-in-out hover:text-rose-500 duration-500">
-                        we have added a "cuttent" or "active" menu selector to the top of the screen
+                    <li class="pl-0 list-disc hover:list-disc ml-8 transition ease-in-out hover:text-rose-500 duration-500">
+                        we have added a "current" or "active" menu selector to the top of the screen
                     </li>
                 </ul>
+
+            </section>
+        </article>
+
+        <article class="bg-rose-900/10 p-2 shadow-md shadow-rose-800/25 border border-rose-800">
+            <header class="bg-rose-800 text-white p-2 -mx-2 -mt-2">
+                <h4>
+                    "Do Work" in C#
+                </h4>
+            </header>
+            <section class="py-4 flex flex-col gap-4 text-xs">
+                <pre><code class="rounded language-c#">
+void signature(string action, string inOut, string place, string location)
+{
+    Console.WriteLine($"{action}, please sign {inOut} on
+                    the {place} located by {location}.");
+}
+
+void work(string[] items)
+{
+    foreach (string item in items) {
+        Console.WriteLine($"work on {item}");
+    }
+}
+
+string[] workItems = {
+    "assessments",
+    "take break",
+    "assessments",
+};
+
+signature("On arrival", "in", "podium", "door");
+work(workItems);
+signature("Before departure", "out", "podium", "door");
+                </code></pre>
+
+            </section>
+        </article>
+
+ <article class="bg-rose-900/10 p-2 shadow-md shadow-rose-800/25 border border-rose-800">
+            <header class="bg-rose-800 text-white p-2 -mx-2 -mt-2">
+                <h4>
+                    "Do Work" in Python
+                </h4>
+            </header>
+            <section class="py-4 flex flex-col gap-4 text-xs">
+                <pre><code class="rounded language-python">
+def signature(action, inOut, place, location):
+    print(f"{action}, please sign {inOut} " \
+          f"on the {place} located by {location}.")
+
+def work(items=[]):
+    for item in items:
+        print(f"work on {item}")
+
+workItems = [
+    "assessments",
+    "take break",
+    "assessments",
+]
+if __name__ == '__main__':
+    signature("On arrival", "in", "podium", "door")
+    work(workItems)
+    signature("Before departure", "out", "podium", "door")
+                </code></pre>
 
             </section>
         </article>
