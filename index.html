@@ -16,6 +16,8 @@
     <!-- Personal CSS if required -->
 
     <!-- JavScript -->
+    <script src="./assets/js/highlight.min.js" defer></script>
+
     <script src="assets/js/on-change.js"
             type="application/javascript" defer></script>
 
@@ -23,8 +25,13 @@
 <body class="flex flex-col">
 <div class="sticky top-0">
     <header class="bg-lime-700 text-white p-2 flex gap-4">
-        <h1 class="text-4xl">C4 2023 S1, Web Tech Learning Code</h1>
-        <p class="pt-3 text-xl"><i class="fa-brands fa-js"></i> Dashboard</p>
+        <h1 class="text-4xl grow">C4 Programming 2023 S1, Web Tech</h1>
+        <div class="text-2xl flex-row flex gap-1 mt-1 pt-1">
+            <i class="fa-brands fa-html5 hover:text-blue-300 transition duration-500 ease-in-out"></i>
+            <i class="fa-brands fa-css3 hover:text-orange-300 transition duration-500 ease-in-out"></i>
+            <i class="fa-brands fa-js hover:text-amber-300 transition duration-500 ease-in-out"></i>
+            <p class="-mt-1 ml-2">Dashboard</p>
+        </div>
     </header>
     <nav class="mb-4 bg-slate-200">
         <!-- ul>li*5>a[href=dom-$$.html]{JavaScript DOM $$} -->
@@ -91,7 +98,7 @@
                           border-t-0 border-x-0 border-b-2 border-lime-900 bg-lime-900 text-lime-100
                           hover:border-lime-500 hover:bg-lime-300 hover:text-lime-800
                           transition duration-1000 ease-in-out  ">#12</a></p>
-             <p><a href="../session-13" class="px-2 py-1
+            <p><a href="../session-13" class="px-2 py-1
                           rounded-t
                           border-t-0 border-x-0 border-b-2 border-lime-900 bg-lime-900 text-lime-100
                           hover:border-lime-500 hover:bg-lime-300 hover:text-lime-800
@@ -122,64 +129,52 @@
                           hover:border-lime-500 hover:bg-lime-300 hover:text-lime-800
                           transition duration-1000 ease-in-out  ">#18</a></p>
 
+            <p><a href="../session-19" class="px-2 py-1
+                          rounded-t
+                          border-t-0 border-x-0 border-b-2 border-lime-900 bg-lime-900 text-lime-100
+                          hover:border-lime-500 hover:bg-lime-300 hover:text-lime-800
+                          transition duration-1000 ease-in-out  ">#19/#20</a></p>
+
         </div>
     </nav>
 </div>
 
-<main class="w-3/4 mx-auto bg-slate-50 p-4 border border-slate-200 mb-4">
+<main class="w-3/4 mx-auto bg-slate-50 p-4 border border-gray-200 mb-8 flex-1">
 
     <article>
         <header class="-mt-4 -mx-4 px-4 bg-lime-700 text-lime-100">
-            <h2 class="text-3xl py-4 mb-6">#16</h2>
+            <h2 class="text-3xl py-4 mb-6">Home</h2>
         </header>
         <section class="my-4 flex flex-col gap-4">
             <h3 class="text-2xl text-lime-800">
                 <i class="fa-brands fa-js"></i>
-                Content
+                Welcome
             </h3>
-            <p>#16 - On Change and Portfolio Work</p>
+            <p>Links above will go to various sessions in the semester.</p>
+            <p></p>
         </section>
-
-        <footer class="my-4">
-            <p>#16 was presented on 26/05/23</p>
-        </footer>
     </article>
 
     <section class="grid grid-cols-2 gap-8">
-        <article class="mb-8">
-            <header class="mb-4">
-                <h3 class="font-bold">On Change Demo Area</h3>
-            </header>
-            <section>
-                <label for="select" class="w-full my-2 block">Changing the value of the select box will update the output</label>
-                <select id="select" class="w-full border border-1 border-lime-500 mt-1 mb-6 p-2">
-                    <option value="" disabled selected>--Choose an option--</option>
-                    <option value="horse">Horse 🐴</option>
-                    <option value="wolf">Wolf 🐺</option>
-                    <option value="fox">Fox 🦊</option>
-                </select>
-
-            </section>
-            <footer class="flex flex-col gap-4 my-4">
-                <div class="bg-slate-900 rounded-lg text-white p-4"
-                     id="outputArea">
-
-                </div>
-            </footer>
-        </article>
 
         <article class="border border-slate-500
                     rounded-lg mb-8 p-8
-
                     flex flex-col gap-4">
             <header>
                 <h3 class="text-xl font-medium">In and Out of Class Activities</h3>
             </header>
             <section class="flex flex-col gap-4">
-                <dl>
-                    <dt>Portfolio Work</dt>
-                    <dd class="pl-4">Work on your portfolio part 3</dd>
-                    <dt>Useful links for you...</dt>
+                <dl class="flex flex-col gap-4">
+                    <dt class="font-semibold">In Class</dt>
+                    <dd class="pl-4">In class you will be presented with a number of activities and other items to work
+                        on, as well as interactive sessions where demonstration of concepts will be done.
+                    </dd>
+                    <dt class="font-semibold">Out of Class</dt>
+                    <dd class="pl-4">Out of class you will be expected to complete at least an hour's study per week,
+                        sometimes more,
+                        working on further learning, tutorials and other items as required.
+                    </dd>
+                    <dt class="font-semibold">Useful links for you...</dt>
                     <dd class="pl-4">
                         <a href="https://www.diigo.com/profile/Ady_Gould?query=javascript"
                            class="border border-x-0 border-t-0 border-b-1 border-lime-500
@@ -190,95 +185,33 @@
                 </dl>
             </section>
         </article>
-
-
-        <article class="bg-lime-900/10 p-2">
-            <header class="bg-lime-900 text-white p-2 -mx-2 -mt-2"><h3>Exercises</h3></header>
-            <section class="py-4 flex flex-col gap-4">
-                <p class="text-lg">
-                    Complete each of the exercises from Session 14, and the following exercises.
-                </p>
-            </section>
-        </article>
-        <article class="bg-lime-900/10 p-2">
-            <header class="bg-lime-800 text-white p-2 -mx-2 -mt-2">
-                <h4>
-                    Exercise 1: Faster Counter
-                </h4>
-            </header>
-            <section class="py-4 flex flex-col gap-4">
-                <p>
-                    Update the counter to execute every ONE second instead of every 2.5 seconds.
-                </p>
-            </section>
-        </article>
-
-        <article class="bg-lime-900/10 p-2">
-            <header class="bg-lime-700 text-white p-2 -mx-2 -mt-2">
-                <h4>Exercise 2: Date for a Clock</h4>
-            </header>
-            <section class="py-4 flex flex-col gap-4">
-                <p>This exercise asks you to create the first part of a clock.</p>
-                <p>In the class we looked at the use of setTimeout, setInterval and the Date object.</p>
-                <p>Using this knowledge, and the provided HTML in this file, write the JS to:</p>
-                <ul class="list-decimal pl-6 pr-4">
-                    <li>Add the Date to the clock in the form "<code>Wednesday 1 May</code>"</li>
-                    <li>Do <strong>not</strong> add the <code>st</code>, <code>nd</code>, <code>rd</code>,
-                        <code>th</code> to the date number.
-                    </li>
-                </ul>
-            </section>
-        </article>
-
-        <article class="bg-lime-900/10 p-2">
-            <header class="bg-lime-600 text-white p-2 -mx-2 -mt-2">
-                <h4>Exercise 3: Making date be 1st, 2nd, 3rd, 4th, etc</h4>
-            </header>
-            <section class="py-4 flex flex-col gap-4">
-                <p>Continuing your clock exercise, we now want the date to have the correct ordinal indicator.</p>
-                <p>Create a function <code>myOrdinal</code> which is given an integer, and it will output a string with
-                    the number and its ordinal.</p>
-                <p>1st, 2nd, 3rd, 4th, 5th, ... 11th, 12th, 13th... 21st, 22nd, 23rd, ...</p>
-                <ul class="list-decimal pl-6 pr-4">
-                    <li>Hint: https://www.sitepoint.com/convert-numbers-to-ordinals-javascript/</li>
-                </ul>
-            </section>
-        </article>
-
-        <article class="bg-lime-900/10 p-2">
-            <header class="bg-lime-500 text-black p-2 -mx-2 -mt-2">
-                <h4>Exercise 4: Add the Time</h4>
-            </header>
-            <section class="py-4 flex flex-col gap-4">
-                <p>Continuing your clock exercise.</p>
-                <p>Now we want to display the time on the clock.</p>
-                <p>Begin by writing the code to add the time in the form HH:MM:SS to the clock face.</p>
-                <p>The time will update every 0.5 seconds.</p>
-            </section>
-        </article>
-
-        <article class="bg-lime-900/10 p-2">
-            <header class="bg-lime-400 text-black p-2 -mx-2 -mt-2">
-                <h4>Exercise 5: Remove Seconds and Flash the :</h4>
-            </header>
-            <section class="py-4 flex flex-col gap-4">
-                <p>Final Step for the clock.</p>
-                <p>Modify the display by removing the seconds.</p>
-                <p>Instead of showing the seconds, the clock will now show and hide the : between the hours and minutes
-                    once every 0.5 seconds.</p>
-            </section>
-        </article>
+        <div></div>
     </section>
 </main>
 
-<footer class="bg-black text-gray-500 grid grid-cols-2 p-6">
-    <div class="">
-        <p>Footer 1</p>
+<footer class="bg-black text-gray-400 grid grid-cols-2 p-6">
+    <div class="flex flex-col gap-2">
+        <p>&copy Copyright 2023, Adrian Gould &amp; North Metropolitan TAFE</p>
+        <p class="text-xs text-gray-600 hover:text-gray-400 transition duration-1000 ease-in-out">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
+                <i class="text-md fa-brands fa-creative-commons"></i>
+                <i class="text-md fa-brands fa-creative-commons-by "></i>
+                <i class="text-md fa-brands fa-creative-commons-nc"></i>
+            </a>
+            This work, and any work derived from it, is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
+                Creative Commons Attribution-NonCommercial 4.0 International License
+            </a>.</p>
     </div>
-    <div class="">
-        <p>Footer 2</p>
+    <div class="flex flex-row gap-4 items-center justify-right">
+        <a href="#" class="p-0 m-0"><img src="assets/images/TAFEWA-Red.svg" alt="TAFEWA Red Logo" class="w-4"><span
+                class="sr-only">North Metropolitan TAFE</span></a>
+        <a href="#" class="p-0 m-0"><i class="fa-brands fa-github"></i><span class="sr-only">Adrian's GitHub</span></a>
+        <a href="#" class="p-0 m-0"><i class="fa fa-link"></i><span class="sr-only">link</span></a>
+        <a href="#" class="p-0 m-0"><i class="fa fa-link-slash"></i><span class="sr-only">link</span></a>
     </div>
 </footer>
+<script>hljs.highlightAll();</script>
 </body>
 </html>
 

@@ -16,6 +16,8 @@
     <!-- Personal CSS if required -->
 
     <!-- JavScript -->
+    <script src="../assets/js/highlight.min.js" defer></script>
+
     <script src="./js/on-change.js" defer></script>
 
 </head>
@@ -102,7 +104,8 @@
                 Content
             </h3>
             <p>Session 16 - On Change and Portfolio Work</p>
-            <p>Note we have moved the <code>assets</code> folder into the root level for sessions 14 and on. The HTML now shows the use of "relative references", unless referring to </p>
+            <p>Note we have moved the <code>assets</code> folder into the root level for sessions 14 and on. The HTML
+                now shows the use of "relative references", unless referring to </p>
         </section>
 
         <footer class="my-4">
@@ -116,12 +119,13 @@
                 <h3 class="font-bold">On Change Demo Area</h3>
             </header>
             <section>
-                <label for="select" class="w-full my-2 block">Changing the value of the select box will update the output</label>
+                <label for="select" class="w-full my-2 block">Changing the value of the select box will update the
+                    output</label>
                 <select id="select" class="w-full border border-1 border-lime-500 mt-1 mb-6 p-2">
                     <option value="" disabled selected>--Choose an option--</option>
                     <option value="horse">Horse 🐴</option>
                     <option value="wolf">Wolf 🐺</option>
-                    <option value="fox" >Fox 🦊</option>
+                    <option value="fox">Fox 🦊</option>
                 </select>
 
             </section>
@@ -146,10 +150,10 @@
                     <dd class="pl-4">Work on your portfolio part 3</dd>
                     <dt>Useful links for you...</dt>
                     <dd class="pl-4">
-                    <a href="https://www.diigo.com/profile/Ady_Gould?query=javascript"
-                        class="border border-x-0 border-t-0 border-b-1 border-lime-500
+                        <a href="https://www.diigo.com/profile/Ady_Gould?query=javascript"
+                           class="border border-x-0 border-t-0 border-b-1 border-lime-500
                                hover:border-lime-900 hover:text-lime-500 ease-in-out transition duration-500 pb-1">
-                        JavaScript Links on Adrian's Diigo
+                            JavaScript Links on Adrian's Diigo
                         </a>
                     </dd>
                 </dl>
@@ -236,13 +240,28 @@
     </section>
 </main>
 
-<footer class="bg-black text-gray-500 grid grid-cols-2 p-6">
-    <div class="">
-        <p>Footer 1</p>
+<footer class="bg-black text-gray-400 grid grid-cols-2 p-6">
+    <div class="flex flex-col gap-2">
+        <p>&copy Copyright 2023, Adrian Gould &amp; North Metropolitan TAFE</p>
+        <p class="text-xs text-gray-600 hover:text-gray-400 transition duration-1000 ease-in-out">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
+                <i class="text-md fa-brands fa-creative-commons"></i>
+                <i class="text-md fa-brands fa-creative-commons-by "></i>
+                <i class="text-md fa-brands fa-creative-commons-nc"></i>
+            </a>
+            This work, and any work derived from it, is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
+                Creative Commons Attribution-NonCommercial 4.0 International License
+            </a>.</p>
     </div>
-    <div class="">
-        <p>Footer 2</p>
+    <div class="flex flex-row gap-4 items-center justify-right">
+        <a href="#" class="p-0 m-0"><img src="assets/images/TAFEWA-Red.svg" alt="TAFEWA Red Logo" class="w-4"><span
+                class="sr-only">North Metropolitan TAFE</span></a>
+        <a href="#" class="p-0 m-0"><i class="fa-brands fa-github"></i><span class="sr-only">Adrian's GitHub</span></a>
+        <a href="#" class="p-0 m-0"><i class="fa fa-link"></i><span class="sr-only">link</span></a>
+        <a href="#" class="p-0 m-0"><i class="fa fa-link-slash"></i><span class="sr-only">link</span></a>
     </div>
 </footer>
+<script>hljs.highlightAll();</script>
 </body>
 </html>
